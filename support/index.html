@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Chill Player Support</title>
+<style>
+  :root { --text: #1d1d1f; --muted: #5f5f66; --bg: #ffffff; --line: #e3e3e8; --accent: #0a66d6; --box: #f5f5f7; }
+  @media (prefers-color-scheme: dark) {
+    :root { --text: #f2f2f5; --muted: #a8a8b0; --bg: #111114; --line: #2c2c32; --accent: #5aa9ff; --box: #1c1c21; }
+  }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
+  h1 { font-size: 1.9em; line-height: 1.2; margin: 0 0 4px; }
+  h2 { font-size: 1.2em; margin: 2em 0 0.5em; padding-top: 1em; border-top: 1px solid var(--line); }
+  p, li { margin: 0.5em 0; }
+  ul { padding-left: 1.25em; }
+  .muted { color: var(--muted); }
+  .summary { background: var(--box); border-radius: 12px; padding: 14px 18px; margin: 20px 0; }
+  a { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.95em; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+  th { font-weight: 600; }
+  @media (max-width: 560px) {
+    table, thead, tbody, tr, th, td { display: block; }
+    thead { display: none; }
+    tr { border-bottom: 1px solid var(--line); padding: 8px 0; }
+    td { border: 0; padding: 2px 0; }
+    td:first-child { font-weight: 600; padding-top: 6px; }
+  }
+</style>
+</head>
+<body>
+<main>
+<h1>Chill Player Support</h1>
+<p class="muted">Chill Player for iPhone, iPad, Mac and Apple TV</p>
+
+<div class="summary">
+  <p><strong>Need help?</strong> Email <a href="mailto:ahkhanlarie@gmail.com">ahkhanlarie@gmail.com</a>. Tell us your device, the
+  app version (Settings &rarr; About) and what happened, and we'll get back to you.</p>
+</div>
+
+<h2>What Chill Player does</h2>
+<p>Chill Player plays the movies and shows already in your own <a href="https://put.io">put.io</a> cloud storage,
+matched to artwork, cast and episodes, with resume, subtitles and offline downloads. You can browse movies and shows,
+see where they stream and try the demo without an account. It can't search for, download or add content from the
+internet.</p>
+
+<h2>Common questions</h2>
+<ul>
+  <li><strong>How do I sign in?</strong> Tap &ldquo;Sign in with put.io&rdquo; and sign in on put.io's own page; the
+    app never sees your password. On Apple TV, enter the code shown at <a href="https://put.io/link">put.io/link</a>
+    on your phone or computer.</li>
+  <li><strong>Can I try it without an account?</strong> Yes: tap &ldquo;Try the Demo&rdquo; on Home or Library. It
+    uses sample public-domain films. Settings &rarr; Leave Demo goes back.</li>
+  <li><strong>A video is matched to the wrong movie or show.</strong> Open it and choose Fix Match.</li>
+  <li><strong>Subtitle search doesn't work.</strong> Search uses OpenSubtitles with your own free API key: add it in
+    Settings &rarr; Subtitles. Subtitles that come with your files work without a key.</li>
+  <li><strong>Where do the extra ratings come from?</strong> From MDBList, with your own free key in Settings &rarr;
+    Connected Services.</li>
+  <li><strong>Where does &ldquo;Where to Watch&rdquo; come from?</strong> Streaming availability from JustWatch,
+    through TMDB, for your device's country.</li>
+  <li><strong>How do I sign out or remove my data?</strong> Settings &rarr; Sign Out. Deleting the app removes
+    everything it kept on your device. See the <a href="../privacy/">Privacy Policy</a>.</li>
+</ul>
+
+<h2>Privacy</h2>
+<p>No accounts of its own, no ads, no tracking. Read the <a href="../privacy/">Privacy Policy</a>.</p>
+
+<p class="muted">Chill Player is an independent app and isn't affiliated with or endorsed by put.io. This product uses
+the TMDB API but is not endorsed or certified by TMDB.</p>
+</main>
+</body>
+</html>

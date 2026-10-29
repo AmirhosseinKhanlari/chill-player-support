@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Chill Player Privacy Policy</title>
+<style>
+  :root { --text: #1d1d1f; --muted: #5f5f66; --bg: #ffffff; --line: #e3e3e8; --accent: #0a66d6; --box: #f5f5f7; }
+  @media (prefers-color-scheme: dark) {
+    :root { --text: #f2f2f5; --muted: #a8a8b0; --bg: #111114; --line: #2c2c32; --accent: #5aa9ff; --box: #1c1c21; }
+  }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
+  h1 { font-size: 1.9em; line-height: 1.2; margin: 0 0 4px; }
+  h2 { font-size: 1.2em; margin: 2em 0 0.5em; padding-top: 1em; border-top: 1px solid var(--line); }
+  p, li { margin: 0.5em 0; }
+  ul { padding-left: 1.25em; }
+  .muted { color: var(--muted); }
+  .summary { background: var(--box); border-radius: 12px; padding: 14px 18px; margin: 20px 0; }
+  a { color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.95em; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+  th { font-weight: 600; }
+  @media (max-width: 560px) {
+    table, thead, tbody, tr, th, td { display: block; }
+    thead { display: none; }
+    tr { border-bottom: 1px solid var(--line); padding: 8px 0; }
+    td { border: 0; padding: 2px 0; }
+    td:first-child { font-weight: 600; padding-top: 6px; }
+  }
+</style>
+</head>
+<body>
+<main>
+<h1>Chill Player Privacy Policy</h1>
+<p class="muted">Effective date: October 15, 2026</p>
+
+<div class="summary">
+  <p><strong>In short:</strong> Chill Player has no accounts of its own, no servers, no ads, no analytics and no
+  tracking. We (the developer) don't receive, see or sell any of your data. The app talks directly to the services
+  listed below, only to do what you ask it to do, and keeps everything else on your device.</p>
+</div>
+
+<h2>What Chill Player is</h2>
+<p>Chill Player is a player and library manager for your own <a href="https://put.io">put.io</a> cloud storage. It
+shows the movies and shows already in your put.io account with artwork and details, and plays them. You can also
+browse movies and shows without signing in to put.io. It can't search for, download or add content from the
+internet. Chill Player is an independent app and is not affiliated with or
+endorsed by put.io or any other service named here.</p>
+
+<h2>What leaves your device, and to whom</h2>
+<p>The app sends requests straight from your device to these services, only when you use the feature that needs
+them, and only what that feature needs. Each service receives that data only to provide the feature to you, and
+handles it under its own privacy policy, which gives your data the same or equal protection as described in this
+policy. We (the developer) never receive your data, so we don't share it with anyone.</p>
+<table>
+  <thead><tr><th>Service</th><th>What it receives</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>put.io (only if you sign in)</td>
+      <td>Your put.io sign-in token with every request; requests to list, search, move, rename, copy, delete and restore
+        your files and folders, read your account's name and storage, convert videos to MP4, read subtitles, and read
+        and save where you stopped watching (playback positions). Videos stream from put.io, and offline downloads are
+        copied from put.io.</td>
+      <td>To show and play your put.io library. You sign in on put.io's own page (on Apple TV, by entering a code at
+        put.io/link on another device); the app never sees your put.io password.</td>
+    </tr>
+    <tr>
+      <td>TMDB (The Movie Database)</td>
+      <td>What you search for (including Ask Chill searches), the titles you open or follow, titles and years read from your
+        put.io file names (to match them to movies and shows), your device's region (for "New to Stream"), and
+        requests for posters and images.</td>
+      <td>Titles, artwork, cast, episode lists and scores, trailer listings, recommendations, release dates and where
+        each title streams (JustWatch data, for Where to Watch).</td>
+    </tr>
+    <tr>
+      <td>Trakt</td>
+      <td>Requests for public top-rated lists and, if you connect one, the Trakt username whose public watchlist you
+        entered.</td>
+      <td>The Top Rated rows and your Watchlist on Home. The app only reads public data; it never signs in to Trakt.</td>
+    </tr>
+    <tr>
+      <td>MDBList (only if you add your own MDBList key)</td>
+      <td>Your MDBList API key and the IMDb ids of the titles you open.</td>
+      <td>Ratings (such as IMDb and Rotten Tomatoes scores) on title pages.</td>
+    </tr>
+    <tr>
+      <td>OpenSubtitles (only if you add your own OpenSubtitles API key)</td>
+      <td>Your OpenSubtitles API key and, when you search for subtitles: the title (its TMDB id, or a name read from
+        the file), season and episode, the language you want, and a short fingerprint ("hash") of the video file. If
+        you sign in to OpenSubtitles, your OpenSubtitles username and password, sent only to OpenSubtitles.</td>
+      <td>Finding and downloading subtitles. The app doesn't include an OpenSubtitles key of its own.</td>
+    </tr>
+    <tr>
+      <td>YouTube</td>
+      <td>When you tap Trailer, the video is loaded in YouTube's embedded player (from youtube-nocookie.com), so
+        YouTube receives the request for that video like any web page would. On Apple TV, Trailer opens the video in
+        the YouTube app instead.</td>
+      <td>Playing trailers. "Watch on YouTube" opens the YouTube app or website.</td>
+    </tr>
+  </tbody>
+</table>
+<p>In the demo ("Try the Demo"), the sample titles are public-domain films and Creative Commons shorts, sample
+videos stream from Apple's public test streams, and no put.io account is used.</p>
+
+<h2>Apple features</h2>
+<ul>
+  <li><strong>Notifications</strong> for new episodes are asked for only when you turn on an alert, and are scheduled on your device (local notifications). There are no
+    push notifications and no notification server.</li>
+  <li><strong>Ask Chill</strong> turns your sentence into search filters with Apple Intelligence's on-device model
+    (on supported devices). The sentence isn't sent to us; the resulting search goes to TMDB like any other search.</li>
+  <li><strong>Spotlight, Siri and widgets</strong> use titles from your library that the app saves on your device. On
+    Apple TV, the <strong>Top Shelf</strong> shows your Continue Watching and recently added titles the same way.</li>
+  <li><strong>iCloud Keychain:</strong> your service keys (MDBList, OpenSubtitles), OpenSubtitles sign-in and Trakt username are saved in the
+    Keychain and, if you use iCloud Keychain, sync to your other Apple devices (end-to-end encrypted by Apple). Your
+    put.io token stays on the device where you signed in.</li>
+</ul>
+
+<h2>How long data is kept</h2>
+<ul>
+  <li>We keep nothing on servers: the app has no servers, so there is nothing of yours for us to store or delete.</li>
+  <li>Data on your device stays there until you sign out or remove it in Settings, or delete the app (see below).</li>
+  <li>Data you send to put.io, TMDB, Trakt, MDBList, OpenSubtitles or YouTube is kept by that service as described
+    in its own privacy policy.</li>
+</ul>
+
+<h2>What stays on your device</h2>
+<ul>
+  <li>Sign-in token and keys, in the Keychain.</li>
+  <li>Settings, My List, followed shows, your library's matches to TMDB, recent searches, subtitle choices, a ratings
+    cache and saved subtitle files.</li>
+  <li>Offline downloads of videos you choose to download.</li>
+  <li>A small shared container (App Group) used only by the app and its own widget (on Apple TV, its Top Shelf):
+    Continue Watching titles, their pictures and a pending link from a control.</li>
+</ul>
+
+<h2>What we don't do</h2>
+<ul>
+  <li>No accounts of our own, and no servers of our own: nothing is sent to the developer.</li>
+  <li>No advertising, no analytics or tracking SDKs, no tracking across apps or websites.</li>
+  <li>We don't sell or share your data, because we never have it.</li>
+</ul>
+
+<h2>Children</h2>
+<p>Chill Player is not directed to children under 13 and doesn't knowingly collect personal information from
+anyone, including children.</p>
+
+<h2>Deleting your data</h2>
+<ul>
+  <li><strong>Sign out</strong> of put.io in Settings to remove the put.io token from the device.</li>
+  <li>In Settings → Connected Services you can disconnect Trakt and remove your MDBList key; in Settings → Subtitles
+    you can remove your OpenSubtitles key and sign out of OpenSubtitles.</li>
+  <li><strong>Delete the app</strong> to remove its settings, library data, caches, downloads and the widget's shared
+    data. Keychain items can outlive the app on iOS, so remove keys in Settings first if you want them gone.</li>
+  <li>To cut off the app's access to put.io from anywhere, revoke Chill Player in your put.io account settings.</li>
+</ul>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be posted here with a new effective date.</p>
+
+<h2>Contact</h2>
+<p>Questions about privacy: see <a href="../support/">Chill Player Support</a>.</p>
+</main>
+</body>
+</html>
