@@ -36,7 +36,7 @@
 <body>
 <main>
 <h1>Chill Player Privacy Policy</h1>
-<p class="muted">Effective date: October 15, 2026</p>
+<p class="muted">Effective date: October 30, 2026</p>
 
 <div class="summary">
   <p><strong>In short:</strong> Chill Player has no accounts of its own, no servers, no ads, no analytics and no
@@ -45,9 +45,10 @@
 </div>
 
 <h2>What Chill Player is</h2>
-<p>Chill Player is a player and library manager for your own <a href="https://put.io">put.io</a> cloud storage. It
-shows the movies and shows already in your put.io account with artwork and details, and plays them. You can also
-browse movies and shows without signing in to put.io. It can't search for, download or add content from the
+<p>Chill Player is a player and library manager for your own videos: the ones in your
+<a href="https://put.io">put.io</a> cloud storage and, if you add them, on your own <a href="https://jellyfin.org">Jellyfin</a>
+servers. It shows the movies and shows already there with artwork and details, and plays them. You can also browse
+movies and shows without signing in to anything. It can't search for, download or add content from the
 internet. Chill Player is an independent app and is not affiliated with or
 endorsed by put.io or any other service named here.</p>
 
@@ -69,9 +70,16 @@ policy. We (the developer) never receive your data, so we don't share it with an
         put.io/link on another device); the app never sees your put.io password.</td>
     </tr>
     <tr>
+      <td>Your Jellyfin server (only if you add one)</td>
+      <td>Your sign-in (username and password, or a Quick Connect code), sent only to your server; what you browse and
+        play; and your playback positions and watched state. Videos stream from your server.</td>
+      <td>To show and play your server's library. The access key stays on this device, is never synced, and is signed
+        out on the server when you remove the server in the app.</td>
+    </tr>
+    <tr>
       <td>TMDB (The Movie Database)</td>
       <td>What you search for (including Ask Chill searches), the titles you open or follow, titles and years read from your
-        put.io file names (to match them to movies and shows), your device's region (for "New to Stream"), and
+        put.io file names (and, for Jellyfin, the TMDB ids your server already has) (to match them to movies and shows), your device's region (for "New to Stream"), and
         requests for posters and images.</td>
       <td>Titles, artwork, cast, episode lists and scores, trailer listings, recommendations, release dates and where
         each title streams (JustWatch data, for Where to Watch).</td>
@@ -123,16 +131,17 @@ videos stream from Apple's public test streams, and no put.io account is used.</
 <ul>
   <li>We keep nothing on servers: the app has no servers, so there is nothing of yours for us to store or delete.</li>
   <li>Data on your device stays there until you sign out or remove it in Settings, or delete the app (see below).</li>
-  <li>Data you send to put.io, TMDB, Trakt, MDBList, OpenSubtitles or YouTube is kept by that service as described
+  <li>Data you send to put.io, your Jellyfin server, TMDB, Trakt, MDBList, OpenSubtitles or YouTube is kept by that service as described
     in its own privacy policy.</li>
 </ul>
 
 <h2>What stays on your device</h2>
 <ul>
-  <li>Sign-in token and keys, in the Keychain.</li>
-  <li>Settings, My List, followed shows, your library's matches to TMDB, recent searches, subtitle choices, a ratings
+  <li>Sign-in tokens and keys, in the Keychain. Your put.io token and Jellyfin access keys stay on this device and
+    aren't synced.</li>
+  <li>Settings, the addresses and names of your Jellyfin servers, My List, followed shows, your library's matches to TMDB, recent searches, subtitle choices, a ratings
     cache and saved subtitle files.</li>
-  <li>Offline downloads of videos you choose to download.</li>
+  <li>Offline downloads of videos you choose to download. Videos from Jellyfin servers aren't downloaded or cached on the device.</li>
   <li>A small shared container (App Group) used only by the app and its own widget (on Apple TV, its Top Shelf):
     Continue Watching titles, their pictures and a pending link from a control.</li>
 </ul>
@@ -151,6 +160,8 @@ anyone, including children.</p>
 <h2>Deleting your data</h2>
 <ul>
   <li><strong>Sign out</strong> of put.io in Settings to remove the put.io token from the device.</li>
+  <li>In Settings → Sources, remove a Jellyfin server to delete its access key from the device and sign this device
+    out on the server, and to drop its titles from your library.</li>
   <li>In Settings → Connected Services you can disconnect Trakt and remove your MDBList key; in Settings → Subtitles
     you can remove your OpenSubtitles key and sign out of OpenSubtitles.</li>
   <li><strong>Delete the app</strong> to remove its settings, library data, caches, downloads and the widget's shared
