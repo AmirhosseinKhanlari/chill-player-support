@@ -36,7 +36,7 @@
 <body>
 <main>
 <h1>Chill Player Privacy Policy</h1>
-<p class="muted">Effective date: October 30, 2026</p>
+<p class="muted">Effective date: October 31, 2026</p>
 
 <div class="summary">
   <p><strong>In short:</strong> Chill Player has no accounts of its own, no servers, no ads, no analytics and no
@@ -47,7 +47,8 @@
 <h2>What Chill Player is</h2>
 <p>Chill Player is a player and library manager for your own videos: the ones in your
 <a href="https://put.io">put.io</a> cloud storage and, if you add them, on your own <a href="https://jellyfin.org">Jellyfin</a>
-servers or <a href="https://plex.tv">Plex</a> account. It shows the movies and shows already there with artwork and details, and plays them. You can also browse
+servers or <a href="https://plex.tv">Plex</a> account, on WebDAV servers (a NAS or computer) you add, and in folders you
+choose in the Files app. It shows the movies and shows already there with artwork and details, and plays them. You can also browse
 movies and shows without signing in to anything. It can't search for, download or add content from the
 internet. Chill Player is an independent app and is not affiliated with or
 endorsed by put.io or any other service named here.</p>
@@ -85,6 +86,14 @@ policy. We (the developer) never receive your data, so we don't share it with an
       <td>To show and play your servers' libraries. The tokens stay on this device and are never synced. Removing
         the account in the app deletes them here but doesn't revoke them on plex.tv: you can sign the device out
         at plex.tv.</td>
+    </tr>
+    <tr>
+      <td>Your WebDAV server (only if you add one)</td>
+      <td>Your username and password, if the server needs them (sent only to that server, and not to another address
+        it redirects to), and requests for its folder listings, video files and subtitle files. Videos stream from
+        your server.</td>
+      <td>To show and play your server's videos. The password stays on this device, in the Keychain, and is never
+        synced. Removing the server in the app deletes it.</td>
     </tr>
     <tr>
       <td>TMDB (The Movie Database)</td>
@@ -141,17 +150,17 @@ videos stream from Apple's public test streams, and no put.io account is used.</
 <ul>
   <li>We keep nothing on servers: the app has no servers, so there is nothing of yours for us to store or delete.</li>
   <li>Data on your device stays there until you sign out or remove it in Settings, or delete the app (see below).</li>
-  <li>Data you send to put.io, your Jellyfin server, Plex, TMDB, Trakt, MDBList, OpenSubtitles or YouTube is kept by that service as described
+  <li>Data you send to put.io, your Jellyfin server, Plex, your WebDAV server, TMDB, Trakt, MDBList, OpenSubtitles or YouTube is kept by that service as described
     in its own privacy policy.</li>
 </ul>
 
 <h2>What stays on your device</h2>
 <ul>
-  <li>Sign-in tokens and keys, in the Keychain. Your put.io token, Jellyfin access keys and Plex tokens stay on this device and
+  <li>Sign-in tokens and keys, in the Keychain. Your put.io token, Jellyfin access keys, Plex tokens and WebDAV passwords stay on this device and
     aren't synced.</li>
-  <li>Settings, the addresses and names of your Jellyfin servers, your Plex username and the names and addresses of its servers, My List, followed shows, your library's matches to TMDB, recent searches, subtitle choices, a ratings
+  <li>Settings, the addresses and names of your Jellyfin and WebDAV servers, the folders you added from the Files app (as access bookmarks; the folders and files stay where they are, on your device or with your file provider), your Plex username and the names and addresses of its servers, My List, followed shows, your library's matches to TMDB, recent searches, subtitle choices, a ratings
     cache and saved subtitle files.</li>
-  <li>Offline downloads of videos you choose to download. Videos from Jellyfin and Plex servers aren't downloaded or cached on the device.</li>
+  <li>Offline downloads of videos you choose to download. Videos from Jellyfin, Plex and WebDAV servers and from your folders aren't downloaded or copied by the app.</li>
   <li>A small shared container (App Group) used only by the app and its own widget (on Apple TV, its Top Shelf):
     Continue Watching titles, their pictures and a pending link from a control.</li>
 </ul>
@@ -172,6 +181,8 @@ anyone, including children.</p>
   <li><strong>Sign out</strong> of put.io in Settings to remove the put.io token from the device.</li>
   <li>In Settings → Sources, remove a Jellyfin server to delete its access key from the device and sign this device
     out on the server, and to drop its titles from your library.</li>
+  <li>In Settings → Sources, remove a WebDAV server to delete its password from the device and drop its titles from
+    your library. Remove a folder to drop its titles; the app never changes or deletes the files in it.</li>
   <li>In Settings → Sources, remove your Plex account to delete its tokens from the device and drop its titles from
     your library. This doesn't revoke the tokens on plex.tv: to do that, sign the device out in your Plex account's
     settings at plex.tv.</li>
